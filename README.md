@@ -1,13 +1,13 @@
 ## Team Number - Project Name
-
-The participants are required to fork this repository and create a public Github repository under their own username (Single repository per team). The following created sections in this README.md need to be duly filled, highlighting the denoted points for the solution/implementation. Please feel free to create further sub-sections in this markdown, the idea is to understand the gist of the components in a singular document.
-
+  Team Number=4
+  Project Name: Event Info Page
+  
 ### Project Overview
 ----------------------------------
 
-A brief description of 
-* What problem did the team try to solve
-* What is the proposed solution
+A brief description
+* In This web app should have upcoming,previous and ongoing events.
+* Also events have timer to show remaining time.
 
 ### Solution Description
 ----------------------------------
@@ -26,4 +26,6 @@ An overview of
 ### Team Members
 ----------------------------------
 
-List of team member names and email IDs with their contributions
+1.Yash Soni
+2.Mayank Sharma
+3.Gaurav kunar
