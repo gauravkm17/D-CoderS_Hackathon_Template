@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>UPCOMING EVENTS||Sikkim Manipal Institute of Technology</title>
+	<link rel="stylesheet" type="text/css" href="team45.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+
+		<div style="text-align: right; margin-bottom: 10px;"><h1 id="header">Events</h1>
+	<div"><input type="button" value="SIGNIN" id="sigin" onclick="window.location.href = 'sigin.html'"></div></div>
+			<div class="topnav">
+		  <a href="team45.html">Home</a>
+		  <a  href="upcomingevents.html">Upcoming Events</a>
+		  <a class="active" href="ongoing.html">Ongoing Events</a>
+		   <a href="previous.html">Previous Events</a>
+		       <a href="contactus.html">Contact Us</a> 
+		  <a href="about.html">About</a>
+		</div>
+		<h3 style="text-align: center; font-size: 60px; margin-bottom:10px;margin-top: 10px;"><strong><u>HACKATHON</u></strong></h3>
+
+</div>
+	<!--HTML Code-->
+<!-- Slideshow Container Div -->
+<div class="container" > 
+
+<!-- Full-width images with caption text -->
+<div class="image-sliderfade fade"> 
+	<div class="slideimage1" ><img src="https://scontent-maa2-1.xx.fbcdn.net/v/t31.0-8/14712683_1127142287377439_8161638066559177379_o.jpg?_nc_cat=100&_nc_ohc=jVL6Bg4aZLYAX8XPO5z&_nc_ht=scontent-maa2-1.xx&oh=0400dec4c6618aad5196b6eeec0440e9&oe=5F013631" style="width:700px" height="500px"></div> 
+</div> 
+
+<div class="image-sliderfade fade"> 
+	<div class="slideimage1"><img src="https://scontent-maa2-2.xx.fbcdn.net/v/t31.0-8/14692120_1127142317377436_6256142699507468676_o.jpg?_nc_cat=103&_nc_ohc=zBI4zBALf7IAX8cIxqW&_nc_ht=scontent-maa2-2.xx&oh=abdef80224c400a0e88764fddf18fba3&oe=5EB5FB57" style="width:700px" height="500px"></div> 
+	
+</div> 
+
+<div class="image-sliderfade fade"> 
+	<div class="slideimage1"><img src="https://scontent-maa2-2.xx.fbcdn.net/v/t31.0-8/14712485_1127142437377424_5292338829514958040_o.jpg?_nc_cat=107&_nc_ohc=DgMuO09Iby4AX-m0rnn&_nc_ht=scontent-maa2-2.xx&oh=95c162df29e890f3cfb5c832d7f1d136&oe=5EB7214C" style="width:700px" height="500px"> </div>
+</div> 
+
+<div class="image-sliderfade fade"> 
+	<div class="slideimage1"><img src="https://scontent-maa2-1.xx.fbcdn.net/v/t31.0-8/14753825_1127142590710742_2749583138332931715_o.jpg?_nc_cat=105&_nc_ohc=FbjR-y3Cp2wAX-V2kPa&_nc_ht=scontent-maa2-1.xx&oh=2eea67906063f3ff1a6db3303bc09642&oe=5ED289F0" style="width:700px" height="500px"></div> 
+	
+</div> 
+
+</div> 
+<br>
+<!-- The dots/circles -->
+<div style="text-align:center"> 
+<span class="dot"></span> 
+<span class="dot"></span> 
+<span class="dot"></span> 
+<span class="dot"></span> 
+</div> 
+
+
+<div id="hackdiv">
+	
+	D'CoderS recognises that hiring through hackathon is the new placement trend and therefore aims at creating a pool of industry-ready students.
+So stimulate your creativity and problem-solving juices for an intensive 24 hour coding session that will get you a chance to win exciting prizes and goodies. <br> 
+
+D'CoderS club proudly announces that the registration for The Hackathon 2020 is now open. <br>
+
+Not sure that you are qualified? Of course you are! We at D'coderS ensure that no one is left behind. With an interest in learning and working with technology you are as qualified for this hackathon as anyone else! <br>
+
+</div>
+
+	<script type="text/javascript">
+		var slideIndex = 0; 
+showSlides(); // call showslide method 
+
+function showSlides() 
+{ 
+	var i; 
+
+	// get the array of divs' with classname image-sliderfade 
+	var slides = document.getElementsByClassName("image-sliderfade"); 
+	
+	// get the array of divs' with classname dot 
+	var dots = document.getElementsByClassName("dot"); 
+
+	for (i = 0; i < slides.length; i++) { 
+		// initially set the display to 
+		// none for every image. 
+		slides[i].style.display = "none"; 
+	} 
+
+	// increase by 1, Global variable 
+	slideIndex++; 
+
+	// check for boundary 
+	if (slideIndex > slides.length) 
+	{ 
+		slideIndex = 1; 
+	} 
+
+	for (i = 0; i < dots.length; i++) { 
+		dots[i].className = dots[i].className. 
+							replace(" active", ""); 
+	} 
+
+	slides[slideIndex - 1].style.display = "block"; 
+	dots[slideIndex - 1].className += " active"; 
+
+	// Change image every 5 seconds 
+	setTimeout(showSlides, 5000); 
+} 
+
+
+	</script>
+
+</body>
+</html>

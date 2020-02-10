@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CONTACT US||Sikkim Manipal Institute of Tecchnology</title>
+	<link rel="stylesheet" type="text/css" href="team45.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+
+	<div style="text-align: right; margin-bottom: 10px;"><h1 id="header">Events</h1>
+  <div"><input type="button" value="SIGNIN" id="sigin" onclick="window.location.href = 'sigin.html'"></div></div>
+	<div class="topnav">
+  <a href="team45.html">Home</a>
+  <a  href="upcomingevents.html">Upcoming Events</a>
+  <a href="ongoing.html">Ongoing Events</a>
+   <a href="previous.html">Previous Events</a>
+   <a class="active" href="contactus.html">Contact Us</a> 
+  <a href="about.html">About</a>
+</div>
+
+<div class="container" style="margin-top: 10px" > 
+
+<!-- Full-width images with caption text -->
+<div class="image-sliderfade fade"> 
+  <div class="slideimage"><img src="https://scontent.fccu11-1.fna.fbcdn.net/v/t1.0-9/p960x960/71740269_156580112085897_889570319222702080_o.jpg?_nc_cat=109&_nc_ohc=6J4iTz0ukJMAX8mA2r5&_nc_ht=scontent.fccu11-1.fna&_nc_tp=6&oh=53bd473b4135affbf40f6365f30212e1&oe=5EC1ECEB" style="width:500px" height="500px"></div> 
+  <div class="text" style="text-align: right;"><strong>Yash Soni<br>+919101663784<br>iamyash1011@gmail.com</strong></div> 
+</div> 
+
+<div class="image-sliderfade fade"> 
+  <div class="slideimage"><img src="https://scontent.fccu11-1.fna.fbcdn.net/v/t1.0-9/p960x960/84839635_111716900393536_284068497007312896_o.jpg?_nc_cat=110&_nc_ohc=H3lfvRT_2bIAX_i30cc&_nc_ht=scontent.fccu11-1.fna&_nc_tp=6&oh=e964989de4fafe1482e230dde16cd282&oe=5ECEF64C" style="width:500px" height="500px"></div> 
+  <div class="text" style="text-align: right;"><strong>Mayank Sharma<br>+917980288820</strong></div> 
+</div> 
+
+<div class="image-sliderfade fade"> 
+  <div class="slideimage"><img src="https://scontent.fccu11-1.fna.fbcdn.net/v/t1.0-9/p960x960/69008721_486714838778716_7786675695039545344_o.jpg?_nc_cat=109&_nc_ohc=KFOpm15B498AX8E_bCk&_nc_ht=scontent.fccu11-1.fna&_nc_tp=6&oh=8f664cab80f73f958c864e6849cab40c&oe=5EB98A78" style="width:500px" height="500px"> </div>
+  <div class="text" style="text-align: right;"><strong>Gaurav Kumar<br>+916204714046</strong></div> 
+</div> 
+
+
+</div> 
+<br> 
+
+
+<!-- The dots/circles -->
+<div style="text-align:center"> 
+<span class="dot"></span> 
+<span class="dot"></span> 
+<span class="dot"></span> 
+</div> 
+
+
+
+
+  <script type="text/javascript">
+    var slideIndex = 0; 
+showSlides(); // call showslide method 
+
+function showSlides() 
+{ 
+  var i; 
+
+  // get the array of divs' with classname image-sliderfade 
+  var slides = document.getElementsByClassName("image-sliderfade"); 
+  
+  // get the array of divs' with classname dot 
+  var dots = document.getElementsByClassName("dot"); 
+
+  for (i = 0; i < slides.length; i++) { 
+    // initially set the display to 
+    // none for every image. 
+    slides[i].style.display = "none"; 
+  } 
+
+  // increase by 1, Global variable 
+  slideIndex++; 
+
+  // check for boundary 
+  if (slideIndex > slides.length) 
+  { 
+    slideIndex = 1; 
+  } 
+
+  for (i = 0; i < dots.length; i++) { 
+    dots[i].className = dots[i].className. 
+              replace(" active", ""); 
+  } 
+
+  slides[slideIndex - 1].style.display = "block"; 
+  dots[slideIndex - 1].className += " active"; 
+
+  // Change image every 5 seconds 
+  setTimeout(showSlides, 5000); 
+} 
+
+
+  </script>
+
+</body>
+</html>

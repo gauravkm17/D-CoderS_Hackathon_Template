@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>UPCOMING EVENTS||Sikkim Manipal Institute of Technology</title>
+	<link rel="stylesheet" type="text/css" href="team45.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+
+			<div style="text-align: right; margin-bottom: 10px;"><h1 id="header">Events</h1>
+	<div"><input type="button" value="SIGNIN" id="sigin" onclick="window.location.href = 'sigin.html'"></div></div>
+			<div class="topnav">
+		  <a href="team45.html">Home</a>
+		  <a class="active" href="upcomingevents.html">Upcoming Events</a>
+		  <a href="ongoing.html">Ongoing Events</a>
+		   <a href="previous.html">Previous Events</a>
+		       <a href="contactus.html">Contact Us</a> 
+		  <a href="about.html">About</a>
+		</div>
+
+  <h2 align="left">UPCOMING EVENTS</h2>
+
+  <table align="center" id="eventid">
+	<strong><tr>
+		<th>S-NO.</th>
+		<th>
+			EVENT NAME
+		</th>
+		<th>DATE</th>
+		<th>TOGGLE</th>
+		
+	</tr></strong>
+	<tr>
+		<td>
+			1
+		</td>
+		<td onclick="proceed()">
+			KAALRAV 2020
+		</td>
+		<td>28 February 2020</td>
+		<td><input type="button" value="Timer" style="text-align: right;" id="kaalrav" onclick="proceed()"></td>
+		
+
+	</tr>
+	<tr>
+		<td>
+			2
+		</td>
+		<td onclick="proceed()">
+			TECH ADRISHTA
+		</td>
+		<td>15 March'20</td>
+		<td><input type="button" value="Timer" style="text-align: right;" id="tech" onclick="proceed()"></td>
+	</tr>
+</table>
+<br>
+
+
+<div id="clockdiv" style="display:none; border-style:solid;"> 
+<div> 
+	<span class="days" id="day"></span> 
+	<div class="smalltext">Days</div> 
+</div> 
+<div> 
+	<span class="hours" id="hour"></span> 
+	<div class="smalltext">Hours</div> 
+</div> 
+<div> 
+	<span class="minutes" id="minute"></span> 
+	<div class="smalltext">Minutes</div> 
+</div> 
+<div> 
+	<span class="seconds" id="second"></span> 
+	<div class="smalltext">Seconds</div> 
+</div> 
+</div>
+
+</div>
+
+<p id="demo"></p>
+
+<script type="text/javascript">
+		function proceed(){
+
+
+			var x = document.getElementById("clockdiv");
+		if(x.style.display === "none")
+			{x.style.display = "block";}
+		else
+			{x.style.display = "none";}
+
+		var y= document.getElementById("kaalrav");
+		var z= document.getElementById("tech");
+		if(y){
+			var deadline = new Date("feb 28, 2020 12:00:00").getTime(); 
+
+		}
+		else if(z){
+			var deadline1 = new Date("March 8, 2020 12:00:00").getTime();
+		}
+
+	
+
+	var x = setInterval(function() { 
+
+	var now = new Date().getTime(); 
+	var t = deadline - now; 
+	var days = Math.floor(t / (1000 * 60 * 60 * 24)); 
+	var hours = Math.floor((t%(1000 * 60 * 60 * 24))/(1000 * 60 * 60)); 
+	var minutes = Math.floor((t % (1000 * 60 * 60)) / (1000 * 60)); 
+	var seconds = Math.floor((t % (1000 * 60)) / 1000); 
+	document.getElementById("day").innerHTML =days ; 
+	document.getElementById("hour").innerHTML =hours; 
+	document.getElementById("minute").innerHTML = minutes; 
+	document.getElementById("second").innerHTML =seconds; 
+	if (t < 0) { 
+		clearInterval(x); 
+		document.getElementById("demo").innerHTML = "TIME UP"; 
+		document.getElementById("day").innerHTML ='0'; 
+		document.getElementById("hour").innerHTML ='0'; 
+		document.getElementById("minute").innerHTML ='0' ; 
+		document.getElementById("second").innerHTML = '0'; } 
+	}, 1000); }
+
+
+	</script>
+
+ 	
+</body>
+</html>
